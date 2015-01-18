@@ -1,0 +1,64 @@
+Missonaries and Cannibals states
+
+   3m3cb : 0m0c
+   2c    3m1c : 0m2cb
+   1m1c    2m2c : 1m1cb
+   1c    3m2c : 0m1cb
+
+   3m1c : 0m2cb
+   2c    3m3cb : 0m0c
+   1c    3m2cb : 0m1c
+
+   2m2c : 1m1cb
+   1m    3m2cb : 0m1c
+   1m1c    3m3cb : 0m0c
+
+   3m2cb : 0m1c
+   1m    2m2c : 1m1cb
+   2c    3m0c : 0m3cb
+   1c    3m1c : 0m2cb
+
+   3m0c : 0m3cb
+   1c    3m1cb : 0m2c
+   2c    3m2cb : 0m1c
+
+   3m1cb : 0m2c
+   2m    1m1c : 2m2cb
+   1c    3m0c : 0m3cb
+
+   1m1c : 2m2cb
+   1m1c   2m2cb : 1m1c
+
+   2m2cb : 1m1c
+   1m1c    1m1c : 2m2cb
+   2m    0m2c : 3m1cb
+
+   3m2c : 0m1cb
+   1c   3m3cb : 0m0c ( Initial State )
+
+   0m2c : 3m1cb
+   1c   0m3cb : 3m0c
+   2m   2m2cb : 1m1c
+
+   0m3cb : 3m0c
+   2c   0m1c : 3m2cb
+   1c   0m2c : 3m1cb
+
+   0m1c : 3m2cb
+   2c   0m3cb : 3m0c
+   1c   0m2cb : 3m1c
+   1m   1m1cb : 2m2c
+
+   0m2cb : 3m1c
+   2c    0m0c : 3m3cb ( Goal State )
+   1c    0m1c : 3m2cb
+
+   1m1cb : 2m2c
+   1m1c    0m0c : 3m3cb ( Goal State )
+   1m    0m1c : 3m2cb
+
+   0m0c : 3m3cb ( Goal State )
+   1c   0m1cb : 3m2c
+
+   0m1cb : 3m2c
+   1c    0m0c : 3m3cb ( Goal State )
