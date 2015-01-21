@@ -75,12 +75,7 @@ import groovy.transform.*
     return state.successors().collect { action, state -> new Node( action:action, state:state, parent:this ) }
   }
 
-  def pathTo() {
-    List<String> results = [this.toString()]
-    pathTo( results )
-  }
-
-  def pathTo( List<String> results ) {
+  def pathTo( List<String> results = [this.toString()]) {
     if ( parent == null ) return results.reverse()
     results.add( this.toString() )
     parent.pathTo(results)
