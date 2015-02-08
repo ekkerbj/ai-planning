@@ -2,7 +2,7 @@ import groovy.transform.*
 import java.util.concurrent.*
 
 @Immutable class Board {
-  final List board
+  List board
   private static final int ROWS = 3
 
   def moveLeft() {
@@ -44,17 +44,17 @@ import java.util.concurrent.*
   }
 
   int misplacedTiles() {
-    int misplaced = 1
+    int misplaced = 0
     Problem.GOAL_BOARD.board.eachWithIndex { tile, index ->
       if (tile != board[index]) misplaced++
     }
-    misplaced-1
+    (misplaced == 0) ? 0 : misplaced-1
   }
 }
 
 @Immutable final class State {
   Board board
-  Integer misplacedTiles
+  int misplacedTiles
 
   def successors() {
     def successors = [:]
