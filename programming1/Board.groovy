@@ -29,6 +29,10 @@ import groovy.transform.*
   }
 
   @Override String toString() {
+    "$board"
+  }
+
+  def printBoard() {
     def writer = new StringWriter()
     def printer = new PrintWriter( writer )
     printer.println('')
