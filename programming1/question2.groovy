@@ -3,7 +3,7 @@ import java.util.concurrent.*
 
 class Problem {
   public final static Board GOAL_BOARD    = new Board([0, 1, 2, 3, 4, 5, 6, 7, 8])
-  public final static Board INITIAL_BOARD = new Board([1, 6, 4, 8, 7, 0, 3, 2, 5])
+  public final static Board INITIAL_BOARD = new Board([8, 1, 7, 4, 5, 6, 2, 0, 3])
   final State initial_state = new State ( INITIAL_BOARD, INITIAL_BOARD.misplacedTiles(GOAL_BOARD) )
   final State goal_state = new State ( GOAL_BOARD, 0 )
 
@@ -38,5 +38,4 @@ def report( def solution, def strategy ) {
   println solution.join('\n')
 }
 
-//report ( solve( new Problem(), { a, b -> a.state.misplacedTiles <=> b.state.misplacedTiles } ), 'Greedy Best-First' )
 report ( solve( new Problem(), { a, b -> a.state.misplacedTiles+a.depth <=> b.state.misplacedTiles+b.depth } ), 'A*' )
